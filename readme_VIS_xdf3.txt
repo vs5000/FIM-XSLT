@@ -47,7 +47,12 @@ Ein Beispiel folgt am Ende der Datei.
 		2 = Debugmeldungen auf auf Detailebene
 		4 = Debugmeldungen mit allen Templates
 
-Beispiel für eine Batch-Datei zum Aufruf:
+Beispiel für eine Batch-Datei zum Aufruf mit Java:
+
+java -jar "C:\Program Files\Saxonica\SaxonHE10-6J\saxon-he-10.6.jar" -s:S00000000204_xdf2.xml -xsl:..\VIS-DF_0_19_xdf3.xsl DateiOutput=1 Navigation=1 Infobox=1 Copybutton=1 ZeigeVersteckte=1 ZeigeDaten=0 ToolAufruf=0 ToolPfadPrefix="https://www.fim-formular.niedersachsen.de/fim/portal/fim/9/client/index.html#/datenmodellierung/" ToolPfadPostfix="" DebugMode=3
+pause
+
+Beispiel für eine Batch-Datei zum Aufruf mit .NET - (externen) Codelisten können nicht geladen werden, daher siehe unten (*):
 
 "C:\Program Files\Saxonica\SaxonHE10.2N\bin\Transform.exe" -s:S00000000204_xdf2.xml -xsl:..\VIS-DF_0_19_xdf3.xsl DateiOutput=1 Navigation=1 Infobox=1 Copybutton=1 ZeigeVersteckte=1 ZeigeDaten=0 ToolAufruf=0 ToolPfadPrefix="https://www.fim-formular.niedersachsen.de/fim/portal/fim/9/client/index.html#/datenmodellierung/" ToolPfadPostfix="" DebugMode=3
 pause
@@ -59,6 +64,6 @@ Vorschlag Verzeichnisaufbau:
 
 - Basis\SDS204 (Arbeitsverzeichnis für ein Stammdatenschema):
 + Stammdatenschema als XML-Datei im Format XDatenfelder (z.B. S00000000204_xdf2.xml)
-+ alle referenzierten Codelisten im Genericodeformat mit Benennung CanonicalVersionUri.xml, wobei Doppelpunkte durch einfache Punkte ersetzt werden (z.B. urn.de.bund.destatis.bevoelkerungsstatistik.schluessel.staat_2019-02-01.xml)
++ (*)bei der Verwendung von .NET müssen hier alle referenzierten Codelisten im Genericodeformat mit Benennung CanonicalVersionUri.xml vorliegen, wobei Doppelpunkte durch einfache Punkte ersetzt werden (z.B. urn.de.bund.destatis.bevoelkerungsstatistik.schluessel.staat_2019-02-01.xml)
 + Batch-Datei mit Aufruf gemäß o.g. Beispiel (z.B. vis_204.bat)
 
