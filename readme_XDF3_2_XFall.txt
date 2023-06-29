@@ -25,18 +25,18 @@ Ein Beispiel folgt am Ende der Datei.
 
 Beispiel für eine Batch-Datei zum Aufruf mit Java:
 
-java -jar "C:\Program Files\Saxonica\SaxonHE10-6J\saxon-he-10.6.jar" -s:S00000000159_xdf3.xml -xsl:..\XDF3_2_XFall_0_03_xdf3.xsl DateiOutput=1 Annotationen=1 Praezisierungen=1 DebugMode=3
+java -jar "C:\Program Files\Saxonica\SaxonHE10-6J\saxon-he-10.6.jar" -s:S00000000159_xdf3.xml -xsl:..\XDF3_2_XFall_0_04_xdf3.xsl DateiOutput=1 Annotationen=1 Praezisierungen=1 DebugMode=3
 pause
 
 Beispiel für eine Batch-Datei zum Aufruf mit .NET - (externen) Codelisten können nicht geladen werden, daher siehe unten (*):
 
-"C:\Program Files\Saxonica\SaxonHE10.6N\bin\Transform.exe" -s:S00000000159_xdf3.xml -xsl:..\XDF3_2_XFall_0_03_xdf3.xsl DateiOutput=1 Annotationen=1 Praezisierungen=1 DebugMode=3
+"C:\Program Files\Saxonica\SaxonHE10.6N\bin\Transform.exe" -s:S00000000159_xdf3.xml -xsl:..\XDF3_2_XFall_0_04_xdf3.xsl DateiOutput=1 Annotationen=1 Praezisierungen=1 DebugMode=3
 pause
 
 Vorschlag Verzeichnisaufbau:
 
 - Basis: 
-+ XDF3_2_XFall_0_03_xdf3.xsl (XSLT zur Transformation der Stammdaten-XML-Datei im Format XDF2 ins Format XDF3)
++ XDF3_2_XFall_0_04_xdf3.xsl (XSLT zur Transformation der Stammdaten-XML-Datei im Format XDF2 ins Format XDF3)
 
 - Basis\SDS159 (Arbeitsverzeichnis für ein Stammdatenschema):
 + Datenschema als XML-Datei im Format XDatenfelder 3 (z.B. S00000000159_xdf3.xml)
