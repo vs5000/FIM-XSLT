@@ -1,4 +1,4 @@
-﻿XDF2_2_XDF3_0_01.xsl: XSLT zur Transformation der xdf2-Dateien ins xdf3-Format
+﻿XDF2_2_XDF3_0_05.xsl: XSLT zur Transformation der xdf2-Dateien ins xdf3-Format
 
 Die Konfigurationswerte werden durch die genannten Übergabeparameter an die XSLT-Datei übergeben. 
 Werden einzelne Parameter nicht übergeben, werden die (zuerst) genannten Defaultwerte genutzt. 
