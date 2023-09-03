@@ -23,7 +23,7 @@ Ein Beispiel folgt am Ende der Datei.
 		2 = Debugmeldungen auf auf Detailebene
 		4 = Debugmeldungen mit allen Templates
 
-Beispiel für eine Batch-Datei zum Aufruf mit Java:
+Beispiel für eine Batch-Datei zum Aufruf mit Java (zu präferieren):
 
 java -jar "C:\Program Files\Saxonica\SaxonHE10-6J\saxon-he-10.6.jar" -s:S00000000159_xdf3.xml -xsl:..\XDF3_2_XFall_0_04_xdf3.xsl DateiOutput=1 Annotationen=1 Praezisierungen=1 DebugMode=3
 pause
