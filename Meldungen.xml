@@ -1,0 +1,1328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gc:CodeList xmlns:gc="http://docs.oasis-open.org/codelist/ns/genericode/1.0/"
+             xmlns:xoev-cl-4="http://xoev.de/schemata/genericode/4"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <Annotation>
+      <Description>
+         <xoev-cl-4:shortName xml:lang="de-DE">XDFM</xoev-cl-4:shortName>
+         <xoev-cl-4:codelistDescription xml:lang="de-DE">Meldungen zur Qualitätsanalyse von FIM XDF3-Datenschemata</xoev-cl-4:codelistDescription>
+         <xoev-cl-4:agencyShortName xml:lang="de-DE">FIM Datenfelder</xoev-cl-4:agencyShortName>
+         <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
+      </Description>
+   </Annotation>
+   <Identification>
+      <ShortName>XDFM</ShortName>
+      <LongName xml:lang="de-DE">Meldungen XDF-Qualität</LongName>
+      <Version>0.4</Version>
+      <CanonicalUri>urn:xoev-de:fim-datenfelder:codeliste:xdfm</CanonicalUri>
+      <CanonicalVersionUri>urn:xoev-de:fim-datenfelder:codeliste:xdfm_0.4</CanonicalVersionUri>
+      <Agency>
+         <LongName xml:lang="de-DE">FIM-Baustein Datenfelder</LongName>
+      </Agency>
+   </Identification>
+   <ColumnSet>
+      <Column Id="Code" Use="required">
+         <ShortName>Code</ShortName>
+         <LongName>Code</LongName>
+         <Data Type="string"/>
+      </Column>
+      <Column Id="Typ" Use="required">
+         <ShortName>Typ</ShortName>
+         <LongName>Typ</LongName>
+         <Data Type="string"/>
+      </Column>
+      <Column Id="Meldungstext" Use="required">
+         <ShortName>Meldungstext</ShortName>
+         <LongName>Meldungstext</LongName>
+         <Data Type="string"/>
+      </Column>
+      <Column Id="Meldungshilfe" Use="optional">
+         <ShortName>Meldungshilfe</ShortName>
+         <LongName>Meldungshilfe</LongName>
+         <Data Type="string"/>
+      </Column>
+      <Key Id="CodeKey">
+         <Annotation>
+            <AppInfo>
+               <xoev-cl-4:recommendedKeyColumn/>
+            </AppInfo>
+         </Annotation>
+         <ShortName>CodeKey</ShortName>
+         <ColumnRef Ref="Code"/>
+      </Key>
+   </ColumnSet>
+   <SimpleCodeList>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1001</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerMethodisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Eine Regel kann nicht auf ein referenziertes Baukastenelement zugreifen.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1002</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Der Name eines Elements ist nicht gesetzt.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1003</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>Warnung</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>In einem Datenschema sollte ein Baukastenelement i. d. R. nicht mehrfach in unterschiedlichen Versionen enthalten sein. </SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1004</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>Warnung</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>In einer Datenfeldgruppe darf ein Baukastenelement nicht mehrfach in derselben Version enthalten sein. </SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1005</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Die Kennung einer Codeliste ist nicht als URN formuliert, z. B. urn:de:fim:codeliste:dokumenttyp.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1006</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Der Bezug zur Handlungsgrundlage darf bei Elementen mit der Strukturelementart 'rechtsnormgebunden' nicht leer sein.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1007</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Es ist kein Dokumentsteckbrief zugeordnet.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1008</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Der Bezug zur Handlungsgrundlage darf bei Dokumentsteckbriefen nicht leer sein.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1009</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Die 'Bezeichnung Eingabe' muss befüllt werden.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1010</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Die 'Bezeichnung Ausgabe' muss befüllt werden.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1011</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Bei Datenfeldern mit der Feldart 'Auswahl' muss der Datentyp 'Text' sein.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1012</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerMethodisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Bei Datenfeldern mit der Feldart 'Auswahlfeld' oder 'Statisches, read-only Feld' dürfen weder die minimale noch die maximale Feldlänge angegeben werden.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1013</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerMethodisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Innerhalb von Datenschemata und Datenfeldgruppen dürfen nur Elemente mit der Strukturelementart harmonisiert oder rechtsnormgebunden verwendet werden.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1014</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Datenfelder dürfen nicht die Strukturelementart 'abstrakt' haben.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1015</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Eine Feldlänge darf nur bei einem Datenfeld mit dem Datentyp 'Text' oder 'String.Latin+' angegeben werden.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1016</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Ein Wertebereich darf nur bei einem Datenfeld mit einem nummerischen Datentyp (Nummer, Ganzzahl, Geldbetrag) oder einem Zeitdatentyp (Uhrzeit, Datum, Zeitpunkt) angegeben werden.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1017</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Ist eine Code- oder Werteliste zugeordnet, muss die Feldart 'Auswahl' sein.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1018</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>Warnung</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Wenn ein Datenfeld die Feldart 'Auswahl' hat, muss entweder eine Code- oder eine Werteliste zugeordnet sein.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1019</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerMethodisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Baukastenelemente, die in Regeln referenziert werden, dürfen keine Versionsangaben beinhalten.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1021</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Es ist keine Multiplizität angegeben.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1022</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerMethodisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Bei Verwendung von Elementen mit der Strukturelementart 'abstrakt' oder 'harmonisiert' innerhalb von Datenfeldgruppen mit der Strukturelementart 'rechtsnormgebunden' muss zur Multiplizität ein Bezug zu einer Handlungsgrundlage angegeben werden.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1023</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Datenfeldgruppe hat keine Unterelemente.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1024</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerMethodisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Die Freitextregel muss befüllt sein.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1025</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerMethodisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>In einem Datenschema dürfen Baukastenelement auf oberster Ebene nicht mehrfach in derselben Version enthalten sein.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1026</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Zirkelbezug</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1027</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Unbekannte Feldart.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1028</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Unbekannter Datentyp.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1029</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Unbekannte Relationsart.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1030</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Unbekannte Vorbefüllungsart.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1031</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Unbekannte Strukturelementart.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1032</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Unbekannter Status.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1033</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Unbekannte Änderbarkeit der Struktur.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1034</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Unbekannte Änderbarkeit der Repräsentation.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1035</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerMethodisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Hinweis noch im alten Format.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1036</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerMethodisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>In einer Codeliste muss die Kombination aus Kennung und Version immer eindeutig sein.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1037</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>Warnung</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>In einem Datenschema sollte eine Codeliste i. d. R. nicht in mehreren Versionen verwendet werden.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1038</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Die ID eines Objektes ist nicht gesetzt.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1039</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Das Format der ID entspricht nicht den Vorgaben.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1040</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Die Kennung einer Codeliste ist leer.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1041</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerMethodisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Baukastenelemente, die in Regeln referenziert werden, verwenden noch die alte, verkürzte Element-ID.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1042</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Unbekannte Gruppenart.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1043</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerMethodisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Eine Auswahlgruppe muss mindestens zwei Unterelemente haben.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1044</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerMethodisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Eine Code- oder Werteliste muss mindestens zwei Einträge haben.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1045</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Innerhalb einer Code- oder Werteliste dürfen Codes (Schlüssel) nicht doppelt verwendet werden.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1046</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Die Multiplizität entspricht nicht den Formatvorgaben.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1047</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>In der Multiplizität muss die minimale Anzahl kleiner oder gleich der maximalen Anzahl sein.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1048</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerMethodisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Die URN-Kennung einer Codeliste entspricht nicht den Formatvorgaben, z. B. urn:xoev-de:fim-datenfelder:codeliste:dokumentart (Umlaute sind nicht erlaubt!).</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1049</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Die Definition eines Dokumentsteckbriefs muss befüllt sein.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1050</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Die Bezeichnung muss befüllt sein.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1051</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Der Bezug zur Handlungsgrundlage darf nicht leer sein.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1052</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Der Bezug zur Handlungsgrundlage darf nur bei abstrakten Dokumentsteckbriefen leer sein.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1053</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Zu einem konkreten Dokumentsteckbrief dürfen keine Dokumentsteckbriefe zugeordnet werden.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1054</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Zu einem abstrakten Dokumentsteckbrief müssen mindestens zwei Dokumentsteckbriefe zugeordnet werden.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1055</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Unbekannte Dokumentart.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1056</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Die Dateigröße darf nur befüllt sein, wenn der Datentyp des Feldes den Wert 'Anlage (Datei)' hat.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1057</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Erlaubte Datentypen dürfen nur angegeben werden, wenn der Datentyp des Feldes den Wert 'Anlage (Datei)' hat.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1058</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerMethodisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Spaltendefinitionen dürfen nur angegeben werden, wenn im Datenfeld eine referenzierte Codeliste enthalten ist.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1059</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Die minimale Feldlänge muss eine ganze Zahl größer oder gleich Null sein.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1060</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Die maximale Feldlänge muss eine ganze Zahl größer Null sein.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1061</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Die minimale Feldlänge darf nicht größer sein als die maximale Feldlänge.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1062</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Die untere Wertgrenze muss eine Zahl sein.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1063</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Die obere Wertgrenze muss eine Zahl sein.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1064</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Die untere Wertgrenze darf nicht größer sein als die obere Wertgrenze.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1065</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Die untere Wertgrenze muss eine ganze Zahl sein.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1066</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Die obere Wertgrenze muss eine ganze Zahl sein.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1067</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Die untere Wertgrenze muss ein Datum sein.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1068</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Die obere Wertgrenze muss ein Datum sein.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1069</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Der Inhalt muss eine Zahl sein.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1070</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Der Inhalt muss eine ganze Zahl sein.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1071</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Der Inhalt muss ein Datum sein.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1072</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Der Inhalt unterschreitet die untere Wertgrenze.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1073</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Der Inhalt überschreitet die obere Wertgrenze.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1074</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Der Inhalt unterschreitet die Minimallänge.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1075</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Der Inhalt überschreitet die Maximallänge.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1076</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerMethodisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Der Inhalt stimmt nicht mit der zugeordneten Codeliste überein.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1077</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Der Inhalt muss ein Wahrheitswert sein (true oder false).</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1078</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Ein Datenschema muss mindestens ein Unterlement enthalten.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1079</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Die untere Wertgrenze muss ein Zeitpunkt (Datum und Uhrzeit) sein.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1080</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Die obere Wertgrenze muss ein Zeitpunkt (Datum und Uhrzeit) sein.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1081</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Die untere Wertgrenze muss eine Uhrzeit sein.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1082</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Die obere Wertgrenze muss eine Uhrzeit sein.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1083</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Der Inhalt muss ein Zeitpunkt (Datum und Uhrzeit) sein.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1084</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Der Inhalt muss eine Uhrzeit sein.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1085</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerMethodisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Der Inhalt muss ein Code-Wert der Werteliste sein.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1087</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Relation zu einem unzulässigen Objekt.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1088</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerMethodisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Diese Relation darf in diesem Objekt nicht verwendet werden.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1101</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>Warnung</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Der Bezug zur Handlungsgrundlage sollte bei Elementen mit der Strukturelementart 'harmonisiert' möglichst nicht leer sein.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1102</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>Warnung</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Bei Eingabedatenfeldern mit dem Datentyp 'Text' oder 'String.Latin+' sollten, wenn möglich, die minimale und maximale Feldlänge angegeben werden.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1103</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>Warnung</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Bei Datenfeldern mit dem Datentyp ‘Nummer', 'Ganzzahl', 'Geldbetrag' oder 'Datum’ sollte, wenn möglich, ein Wertebereich angegeben werden.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1104</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>Deaktiviert</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Zu einer Regel ist kein Script definiert.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1105</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>Warnung</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Die Version einer Codeliste sollte im Datumsformat in folgender Form angegeben werden, z. B. 2018-03-01.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1106</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>Warnung</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Eine Datenfeldgruppe sollte mehr als ein Unterelement haben.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1107</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>Warnung</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Der Hilfetext eines Dokumentsteckbriefs sollte befüllt werden.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1108</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>Warnung</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Wenn ein Datenfeld die Feldart 'Auswahl' hat, sollte der Datentyp i. d. R. vom Typ 'Text' sein.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1109</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>Warnung</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Bei einem Feld mit nur lesendem Zugriff, der Feldart 'Statisch' wird i. d. R. der Inhalt mit einem Text befüllt.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1110</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>Warnung</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>In Codelisten sollte der Bezug zur Handlungsgrundlage nicht leer sein.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1111</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>Warnung</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Codeliste wird nicht verwendet.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1112</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>Warnung</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Versionierte Baukastenelemente, die nicht verwendet werden, sollten gelöscht werden.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1113</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>Warnung</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Eine Arbeitsversion, die nicht verwendet wird und keine Versionen hat, sollte gelöscht werden.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1114</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>Warnung</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Element wird nicht verwendet.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1115</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>Warnung</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Auf die Codeliste kann nicht im XRepository zugegriffen werden. Dies könnte auf einen Fehler in der URN oder der Version der Codeliste zurückzuführen sein.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1116</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>Warnung</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Baukastenelemente im Status 'inaktiv' sollten nur in Ausnahmefällen verwendet werden.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1117</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>Hinweis</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Das Feld 'Fachlicher Ersteller' darf zur Versionierung oder Veröffentlichung nicht leer sein.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1118</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Ein Unterlement einer Auswahlgruppe muss immer die Multiplizität 0:1 haben.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1119</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>Hinweis</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Der Status muss zur Versionierung oder Veröffentlichung den Wert 'aktiv' haben.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1120</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>Warnung</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Innerhalb einer Code- oder Werteliste sollten Namen nicht doppelt verwendet werden.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+   </SimpleCodeList>
+</gc:CodeList>

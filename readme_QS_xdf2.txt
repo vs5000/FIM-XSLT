@@ -72,13 +72,16 @@ Ein Beispiel folgt am Ende der Datei.
 
 Beispiel für eine Batch-Datei zum Aufruf:
 
-"C:\Program Files\Saxonica\SaxonHE10.2N\bin\Transform.exe" -s:S00000159V1.0_xdf2.xml -xsl:..\QS-DF_0_962_xdf2.xsl DateiOutput=1 Navigation=1 JavaScript=1 Meldungen=1 AbstraktWarnung=1 VersionsHinweise=0 MeldungsFazit=0 CodelistenInhalt=0 ToolAufruf=1 ToolPfadPrefix="https://www.fim-formular.niedersachsen.de/fim/portal/fim/9/editor/" ToolPfadPostfix="/view" Statistik=0 StatistikVerwendung=1 StatistikStrukturart=1 StatistikZustandsinfos=1 DebugMode=3
+"C:\Program Files\Saxonica\SaxonHE10.2N\bin\Transform.exe" -s:S00000159V1.0_xdf2.xml -xsl:..\QS-DF_0_973_xdf2.xsl DateiOutput=1 Navigation=1 JavaScript=1 Meldungen=1 AbstraktWarnung=1 VersionsHinweise=0 MeldungsFazit=0 CodelistenInhalt=0 ToolAufruf=1 ToolPfadPrefix="https://www.fim-formular.niedersachsen.de/fim/portal/fim/9/editor/" ToolPfadPostfix="/view" Statistik=0 StatistikVerwendung=1 StatistikStrukturart=1 StatistikZustandsinfos=1 DebugMode=3
 pause
+
+NEU: die Meldungen des Qualitätsberichts sind ausgelagert in eine externe Codeliste, die in der Datei Meldungen.xml enthalten ist. Diese muss in dem selben Verzeichnis, wie die XSLT-Datei liegen.
 
 Vorschlag Verzeichnisaufbau:
 
 - Basis: 
-+ QS-DF_0_962_xdf2.xsl (XSLT zur Transformation der Stammdaten-XML-Datei in eine QS-Bericht als HTML-Datei)
++ QS-DF_0_973_xdf2.xsl (XSLT zur Transformation der Stammdaten-XML-Datei in eine QS-Bericht als HTML-Datei)
++ Meldungen.xml (Codeliste mit den Meldungen)
 
 - Basis\SDS159 (Arbeitsverzeichnis für ein Stammdatenschema):
 + Stammdatenschema als XML-Datei im Format XDatenfelder (z.B. S00000159V1.0_xdf2.xml)

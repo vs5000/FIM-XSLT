@@ -68,18 +68,21 @@ Ein Beispiel folgt am Ende der Datei.
 
 Beispiel für eine Batch-Datei zum Aufruf mit Java:
 
-java -jar "C:\Program Files\Saxonica\SaxonHE10-6J\saxon-he-10.6.jar" -s:S00123000159V1.4_xdf3.xml -xsl:..\QS-DF_0_986_xdf3.xsl DateiOutput=1 Navigation=1 JavaScript=1 Meldungen=1 AbstraktWarnung=1 MeldungsFazit=0 CodelistenInhalt=0 ToolAufruf=1 ToolPfadPrefix="https://www.fim-formular.niedersachsen.de/fim/portal/fim/9/editor/" ToolPfadPostfix="/view" Statistik=0 StatistikVerwendung=1 StatistikStrukturart=1 StatistikZustandsinfos=1 DebugMode=3
+java -jar "C:\Program Files\Saxonica\SaxonHE10-6J\saxon-he-10.6.jar" -s:S00123000159V1.4_xdf3.xml -xsl:..\QS-DF_0_996_xdf3.xsl DateiOutput=1 Navigation=1 JavaScript=1 Meldungen=1 AbstraktWarnung=1 MeldungsFazit=0 CodelistenInhalt=0 ToolAufruf=1 ToolPfadPrefix="https://www.fim-formular.niedersachsen.de/fim/portal/fim/9/editor/" ToolPfadPostfix="/view" Statistik=0 StatistikVerwendung=1 StatistikStrukturart=1 StatistikZustandsinfos=1 DebugMode=3
 pause
 
 Beispiel für eine Batch-Datei zum Aufruf mit .NET - (externen) Codelisten können nicht geladen werden, daher siehe unten (*):
 
-"C:\Program Files\Saxonica\SaxonHE10.2N\bin\Transform.exe" -s:S00123000159V1.4_xdf3.xml -xsl:..\QS-DF_0_986_xdf3.xsl DateiOutput=1 Navigation=1 JavaScript=1 Meldungen=1 AbstraktWarnung=1 MeldungsFazit=0 CodelistenInhalt=0 ToolAufruf=1 ToolPfadPrefix="https://www.fim-formular.niedersachsen.de/fim/portal/fim/9/editor/" ToolPfadPostfix="/view" Statistik=0 StatistikVerwendung=1 StatistikStrukturart=1 StatistikZustandsinfos=1 DebugMode=3
+"C:\Program Files\Saxonica\SaxonHE10.2N\bin\Transform.exe" -s:S00123000159V1.4_xdf3.xml -xsl:..\QS-DF_0_996_xdf3.xsl DateiOutput=1 Navigation=1 JavaScript=1 Meldungen=1 AbstraktWarnung=1 MeldungsFazit=0 CodelistenInhalt=0 ToolAufruf=1 ToolPfadPrefix="https://www.fim-formular.niedersachsen.de/fim/portal/fim/9/editor/" ToolPfadPostfix="/view" Statistik=0 StatistikVerwendung=1 StatistikStrukturart=1 StatistikZustandsinfos=1 DebugMode=3
 pause
+
+NEU: die Meldungen des Qualitätsberichts sind ausgelagert in eine externe Codeliste, die in der Datei Meldungen.xml enthalten ist. Diese muss in dem selben Verzeichnis, wie die XSLT-Datei liegen.
 
 Vorschlag Verzeichnisaufbau:
 
 - Basis: 
 + QS-DF_0_986_xdf3.xsl (XSLT zur Transformation der Stammdaten-XML-Datei in eine QS-Bericht als HTML-Datei)
++ Meldungen.xml (Codeliste mit den Meldungen)
 
 - Basis\SDS159 (Arbeitsverzeichnis für ein Stammdatenschema):
 + Stammdatenschema als XML-Datei im Format XDatenfelder (z.B. S00123000159V1.4_xdf3.xml)
