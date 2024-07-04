@@ -130,9 +130,6 @@
 		</xsl:for-each>
 	</xsl:variable>
 	<xsl:variable name="SIDNeu">
-		<xsl:message>
-			aaaaa<xsl:copy-of select="$SIDTemp"/>bbbbb
-		</xsl:message>
 		<xsl:choose>
 			<xsl:when test="fn:string-length($MappingInhalt) &gt; 9">
 				<xsl:choose>
@@ -155,9 +152,6 @@
 	</xsl:variable>
 	<xsl:variable name="NameNeu"><xsl:call-template name="FILEsonderzeichenraus"><xsl:with-param name="OriginalText" select="/*/*/xdf:name"/></xsl:call-template></xsl:variable>
 	<xsl:variable name="OutputDateiname">
-		<xsl:message>
-			cccc<xsl:copy-of select="$SIDNeu"/>dddd
-		</xsl:message>
 		<xsl:choose>
 			<xsl:when test="name(/*) ='xdf:xdatenfelder.stammdatenschema.0102'">
 				<xsl:choose>
