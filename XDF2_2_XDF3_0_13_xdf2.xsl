@@ -100,14 +100,14 @@
 		<xsl:choose>
 			<xsl:when test="fn:doc-available($MappingDatei)">
 				<xsl:copy-of select="fn:document($MappingDatei)"/>
-				<xsl:if test="$DebugMode = '0'">
-	<xsl:message>FILE2</xsl:message>
+				<xsl:if test="$DebugMode = '4'">
+				<xsl:message>FILE2</xsl:message>
 				</xsl:if>
 			</xsl:when>
 			<xsl:otherwise>
-					<xsl:if test="$DebugMode = '0'">
-	<xsl:message>LEER</xsl:message>
-					</xsl:if>
+				<xsl:if test="$DebugMode = '4'">
+				<xsl:message>LEER</xsl:message>
+				</xsl:if>
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:variable>
