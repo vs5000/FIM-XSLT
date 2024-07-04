@@ -13,9 +13,9 @@
    <Identification>
       <ShortName>XDFM</ShortName>
       <LongName xml:lang="de-DE">Meldungen XDF-Qualität</LongName>
-      <Version>0.4</Version>
+      <Version>0.7</Version>
       <CanonicalUri>urn:xoev-de:fim-datenfelder:codeliste:xdfm</CanonicalUri>
-      <CanonicalVersionUri>urn:xoev-de:fim-datenfelder:codeliste:xdfm_0.4</CanonicalVersionUri>
+      <CanonicalVersionUri>urn:xoev-de:fim-datenfelder:codeliste:xdfm_0.7</CanonicalVersionUri>
       <Agency>
          <LongName xml:lang="de-DE">FIM-Baustein Datenfelder</LongName>
       </Agency>
@@ -312,7 +312,7 @@
             <SimpleValue>FehlerKritisch</SimpleValue>
          </Value>
          <Value ColumnRef="Meldungstext">
-            <SimpleValue>Datenfeldgruppe hat keine Unterelemente.</SimpleValue>
+            <SimpleValue>Eine Datenfeldgruppe muss mindestens ein Unterelement enthalten.</SimpleValue>
          </Value>
          <Value ColumnRef="Meldungshilfe"/>
       </Row>
@@ -360,7 +360,7 @@
             <SimpleValue>FehlerKritisch</SimpleValue>
          </Value>
          <Value ColumnRef="Meldungstext">
-            <SimpleValue>Unbekannte Feldart.</SimpleValue>
+            <SimpleValue>Es ist keine oder eine unbekannte Feldart angegeben.</SimpleValue>
          </Value>
          <Value ColumnRef="Meldungshilfe"/>
       </Row>
@@ -372,7 +372,7 @@
             <SimpleValue>FehlerKritisch</SimpleValue>
          </Value>
          <Value ColumnRef="Meldungstext">
-            <SimpleValue>Unbekannter Datentyp.</SimpleValue>
+            <SimpleValue>Es ist kein oder ein unbekannter Datentyp angegeben.</SimpleValue>
          </Value>
          <Value ColumnRef="Meldungshilfe"/>
       </Row>
@@ -384,7 +384,7 @@
             <SimpleValue>FehlerKritisch</SimpleValue>
          </Value>
          <Value ColumnRef="Meldungstext">
-            <SimpleValue>Unbekannte Relationsart.</SimpleValue>
+            <SimpleValue>Es ist keine oder eine unbekannte Relationsart angegeben.</SimpleValue>
          </Value>
          <Value ColumnRef="Meldungshilfe"/>
       </Row>
@@ -396,7 +396,7 @@
             <SimpleValue>FehlerKritisch</SimpleValue>
          </Value>
          <Value ColumnRef="Meldungstext">
-            <SimpleValue>Unbekannte Vorbefüllungsart.</SimpleValue>
+            <SimpleValue>Es ist keine oder eine unbekannte Vorbefüllungsart angegeben.</SimpleValue>
          </Value>
          <Value ColumnRef="Meldungshilfe"/>
       </Row>
@@ -408,7 +408,7 @@
             <SimpleValue>FehlerKritisch</SimpleValue>
          </Value>
          <Value ColumnRef="Meldungstext">
-            <SimpleValue>Unbekannte Strukturelementart.</SimpleValue>
+            <SimpleValue>Es ist keine oder eine unbekannte Strukturelementart angegeben.</SimpleValue>
          </Value>
          <Value ColumnRef="Meldungshilfe"/>
       </Row>
@@ -420,7 +420,7 @@
             <SimpleValue>FehlerKritisch</SimpleValue>
          </Value>
          <Value ColumnRef="Meldungstext">
-            <SimpleValue>Unbekannter Status.</SimpleValue>
+            <SimpleValue>Es ist kein oder ein unbekannter Status angegeben.</SimpleValue>
          </Value>
          <Value ColumnRef="Meldungshilfe"/>
       </Row>
@@ -432,7 +432,7 @@
             <SimpleValue>FehlerKritisch</SimpleValue>
          </Value>
          <Value ColumnRef="Meldungstext">
-            <SimpleValue>Unbekannte Änderbarkeit der Struktur.</SimpleValue>
+            <SimpleValue>Es ist keine oder eine unbekannte Änderbarkeit der Struktur angegeben.</SimpleValue>
          </Value>
          <Value ColumnRef="Meldungshilfe"/>
       </Row>
@@ -444,7 +444,7 @@
             <SimpleValue>FehlerKritisch</SimpleValue>
          </Value>
          <Value ColumnRef="Meldungstext">
-            <SimpleValue>Unbekannte Änderbarkeit der Repräsentation.</SimpleValue>
+            <SimpleValue>Es ist keine oder eine unbekannte Änderbarkeit der Repräsentation angegeben.</SimpleValue>
          </Value>
          <Value ColumnRef="Meldungshilfe"/>
       </Row>
@@ -540,7 +540,7 @@
             <SimpleValue>FehlerKritisch</SimpleValue>
          </Value>
          <Value ColumnRef="Meldungstext">
-            <SimpleValue>Unbekannte Gruppenart.</SimpleValue>
+            <SimpleValue>Es ist keine oder eine unbekannte Gruppenart angegeben.</SimpleValue>
          </Value>
          <Value ColumnRef="Meldungshilfe"/>
       </Row>
@@ -696,7 +696,7 @@
             <SimpleValue>FehlerKritisch</SimpleValue>
          </Value>
          <Value ColumnRef="Meldungstext">
-            <SimpleValue>Unbekannte Dokumentart.</SimpleValue>
+            <SimpleValue>Es ist keine oder eine unbekannte Dokumentart angegeben.</SimpleValue>
          </Value>
          <Value ColumnRef="Meldungshilfe"/>
       </Row>
@@ -972,7 +972,7 @@
             <SimpleValue>FehlerKritisch</SimpleValue>
          </Value>
          <Value ColumnRef="Meldungstext">
-            <SimpleValue>Ein Datenschema muss mindestens ein Unterlement enthalten.</SimpleValue>
+            <SimpleValue>Ein Datenschema muss mindestens ein Unterelement enthalten.</SimpleValue>
          </Value>
          <Value ColumnRef="Meldungshilfe"/>
       </Row>
@@ -1086,6 +1086,114 @@
       </Row>
       <Row>
          <Value ColumnRef="Code">
+            <SimpleValue>1089</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>Deaktiviert</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Bei Datenfeldern mit der Feldart 'Eingabe' darf der Datentyp nicht 'Statisches Objekt' sein.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1090</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Bei Datenfeldern mit der Feldart 'Statisch' darf der Datentyp nur 'Text' oder 'Text (String Latin)' sein.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1091</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>In der Relation ist kein Objekt angegeben.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1092</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerKritisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Die Angabe zu IstAbstrakt ist falsch oder leer.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1093</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>Warnung</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Innerhalb einer Code- oder Werteliste sollten Namen (Bezeichnungen) nicht doppelt verwendet werden.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1094</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerMethodisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Datenschemata oder Datenfeldgruppen mit mindestens einem weiteren Unterelement dürfen das Element F60000000001 'Default-Datenfeld' nicht enthalten.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1095</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>Warnung</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Datenschemata oder Datenfeldgruppen sollten das Element F60000000001 'Default-Datenfeld' nur in Ausnahmefällen beinhalten.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1096</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>Warnung</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Ein Datenschema sollte nur übergangsweise dem Dokumentsteckbrief D99000000001 'Default-Dokumentsteckbrief' zugeordnet werden.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1097</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerMethodisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Ein methodisch oder fachlich freigegebenes Datenschema darf nicht dem Dokumentsteckbrief D99000000001 'Default-Dokumentsteckbrief' zugeordnet sein.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
             <SimpleValue>1101</SimpleValue>
          </Value>
          <Value ColumnRef="Typ">
@@ -1173,7 +1281,7 @@
             <SimpleValue>1108</SimpleValue>
          </Value>
          <Value ColumnRef="Typ">
-            <SimpleValue>Warnung</SimpleValue>
+            <SimpleValue>Deaktiviert</SimpleValue>
          </Value>
          <Value ColumnRef="Meldungstext">
             <SimpleValue>Wenn ein Datenfeld die Feldart 'Auswahl' hat, sollte der Datentyp i. d. R. vom Typ 'Text' sein.</SimpleValue>
@@ -1309,18 +1417,6 @@
          </Value>
          <Value ColumnRef="Meldungstext">
             <SimpleValue>Der Status muss zur Versionierung oder Veröffentlichung den Wert 'aktiv' haben.</SimpleValue>
-         </Value>
-         <Value ColumnRef="Meldungshilfe"/>
-      </Row>
-      <Row>
-         <Value ColumnRef="Code">
-            <SimpleValue>1120</SimpleValue>
-         </Value>
-         <Value ColumnRef="Typ">
-            <SimpleValue>Warnung</SimpleValue>
-         </Value>
-         <Value ColumnRef="Meldungstext">
-            <SimpleValue>Innerhalb einer Code- oder Werteliste sollten Namen nicht doppelt verwendet werden.</SimpleValue>
          </Value>
          <Value ColumnRef="Meldungshilfe"/>
       </Row>
