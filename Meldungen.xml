@@ -13,9 +13,9 @@
    <Identification>
       <ShortName>XDFM</ShortName>
       <LongName xml:lang="de-DE">Meldungen XDF-Qualität</LongName>
-      <Version>0.7</Version>
+      <Version>0.8</Version>
       <CanonicalUri>urn:xoev-de:fim-datenfelder:codeliste:xdfm</CanonicalUri>
-      <CanonicalVersionUri>urn:xoev-de:fim-datenfelder:codeliste:xdfm_0.7</CanonicalVersionUri>
+      <CanonicalVersionUri>urn:xoev-de:fim-datenfelder:codeliste:xdfm_0.8</CanonicalVersionUri>
       <Agency>
          <LongName xml:lang="de-DE">FIM-Baustein Datenfelder</LongName>
       </Agency>
@@ -1189,6 +1189,30 @@
          </Value>
          <Value ColumnRef="Meldungstext">
             <SimpleValue>Ein methodisch oder fachlich freigegebenes Datenschema darf nicht dem Dokumentsteckbrief D99000000001 'Default-Dokumentsteckbrief' zugeordnet sein.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1098</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerMethodisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Bezeichung und Hilfetext dürfen nicht gleich sein.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1099</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerMethodisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Name und Hilfetext dürfen nicht gleich sein.</SimpleValue>
          </Value>
          <Value ColumnRef="Meldungshilfe"/>
       </Row>
