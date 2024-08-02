@@ -13,9 +13,9 @@
    <Identification>
       <ShortName>XDFM</ShortName>
       <LongName xml:lang="de-DE">Meldungen XDF-Qualität</LongName>
-      <Version>0.8</Version>
+      <Version>1.0</Version>
       <CanonicalUri>urn:xoev-de:fim-datenfelder:codeliste:xdfm</CanonicalUri>
-      <CanonicalVersionUri>urn:xoev-de:fim-datenfelder:codeliste:xdfm_0.8</CanonicalVersionUri>
+      <CanonicalVersionUri>urn:xoev-de:fim-datenfelder:codeliste:xdfm_1.0</CanonicalVersionUri>
       <Agency>
          <LongName xml:lang="de-DE">FIM-Baustein Datenfelder</LongName>
       </Agency>
@@ -1218,6 +1218,18 @@
       </Row>
       <Row>
          <Value ColumnRef="Code">
+            <SimpleValue>1100</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerMethodisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Bei Datenfeldern mit den Datentypen 'Anlage (Datei)' oder 'Statisches Objekt' darf der Inhalt nicht gefüllt sein.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
             <SimpleValue>1101</SimpleValue>
          </Value>
          <Value ColumnRef="Typ">
@@ -1248,7 +1260,7 @@
             <SimpleValue>Warnung</SimpleValue>
          </Value>
          <Value ColumnRef="Meldungstext">
-            <SimpleValue>Bei Datenfeldern mit dem Datentyp ‘Nummer', 'Ganzzahl', 'Geldbetrag' oder 'Datum’ sollte, wenn möglich, ein Wertebereich angegeben werden.</SimpleValue>
+            <SimpleValue>Bei Datenfeldern mit dem Datentyp 'Nummer', 'Ganzzahl', 'Geldbetrag' oder 'Datum' sollte, wenn möglich, ein Wertebereich angegeben werden.</SimpleValue>
          </Value>
          <Value ColumnRef="Meldungshilfe"/>
       </Row>
@@ -1441,6 +1453,18 @@
          </Value>
          <Value ColumnRef="Meldungstext">
             <SimpleValue>Der Status muss zur Versionierung oder Veröffentlichung den Wert 'aktiv' haben.</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungshilfe"/>
+      </Row>
+      <Row>
+         <Value ColumnRef="Code">
+            <SimpleValue>1120</SimpleValue>
+         </Value>
+         <Value ColumnRef="Typ">
+            <SimpleValue>FehlerMethodisch</SimpleValue>
+         </Value>
+         <Value ColumnRef="Meldungstext">
+            <SimpleValue>Bei Datenfeldern mit den Datentypen 'Anlage (Datei)' oder 'Statisches Objekt' darf kein Pattern angegeben werden.</SimpleValue>
          </Value>
          <Value ColumnRef="Meldungshilfe"/>
       </Row>
