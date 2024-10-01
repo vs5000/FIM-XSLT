@@ -84,7 +84,7 @@
             <SimpleValue>Warnung</SimpleValue>
          </Value>
          <Value ColumnRef="Meldungstext">
-            <SimpleValue>In einem Datenschema sollte ein Baukastenelement i. d. R. nicht mehrfach in unterschiedlichen Versionen enthalten sein. </SimpleValue>
+            <SimpleValue>In einem Datenschema sollte ein Baukastenelement i. d. R. nicht mehrfach in unterschiedlichen Versionen enthalten sein.</SimpleValue>
          </Value>
          <Value ColumnRef="Meldungshilfe"/>
       </Row>
@@ -1221,7 +1221,7 @@
             <SimpleValue>1100</SimpleValue>
          </Value>
          <Value ColumnRef="Typ">
-            <SimpleValue>FehlerMethodisch</SimpleValue>
+            <SimpleValue>FehlerKritisch</SimpleValue>
          </Value>
          <Value ColumnRef="Meldungstext">
             <SimpleValue>Bei Datenfeldern mit den Datentypen 'Anlage (Datei)' oder 'Statisches Objekt' darf der Inhalt nicht gefüllt sein.</SimpleValue>
