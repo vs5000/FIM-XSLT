@@ -7,7 +7,7 @@
          <xoev-cl-4:shortName xml:lang="de-DE">XDFM</xoev-cl-4:shortName>
          <xoev-cl-4:codelistDescription xml:lang="de-DE">Meldungen zur Qualitätsanalyse von FIM XDF3-Datenschemata</xoev-cl-4:codelistDescription>
          <xoev-cl-4:agencyShortName xml:lang="de-DE">FIM Datenfelder</xoev-cl-4:agencyShortName>
-         <xoev-cl-4:versionHandbook>1.2</xoev-cl-4:versionHandbook>
+         <xoev-cl-4:versionHandbook>1.3</xoev-cl-4:versionHandbook>
       </Description>
    </Annotation>
    <Identification>
@@ -15,7 +15,7 @@
       <LongName xml:lang="de-DE">Meldungen XDF-Qualität</LongName>
       <Version>1.0</Version>
       <CanonicalUri>urn:xoev-de:fim-datenfelder:codeliste:xdfm</CanonicalUri>
-      <CanonicalVersionUri>urn:xoev-de:fim-datenfelder:codeliste:xdfm_1.0</CanonicalVersionUri>
+      <CanonicalVersionUri>urn:xoev-de:fim-datenfelder:codeliste:xdfm_1.3</CanonicalVersionUri>
       <Agency>
          <LongName xml:lang="de-DE">FIM-Baustein Datenfelder</LongName>
       </Agency>
@@ -1104,7 +1104,7 @@
             <SimpleValue>FehlerKritisch</SimpleValue>
          </Value>
          <Value ColumnRef="Meldungstext">
-            <SimpleValue>Bei Datenfeldern mit der Feldart 'Statisch' darf der Datentyp nur 'Text' oder 'Text (String Latin)' sein.</SimpleValue>
+            <SimpleValue>Bei Datenfeldern mit der Feldart 'Statisch' darf der Datentyp nur 'Statisches Objekt', 'Text' oder 'Text (String Latin)' sein.</SimpleValue>
          </Value>
          <Value ColumnRef="Meldungshilfe"/>
       </Row>
