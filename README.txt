@@ -30,4 +30,20 @@ Alle Betriebssysteme (JAR)
 - Laden Sie xdf3-transformer-0.7.2-jar-with-dependencies.jar herunter
 - Führen Sie aus mit: java -jar xdf3-transformer-0.7.2-jar-with-dependencies.jar
 
+Verwendete Technologien
+- Java 8 - Programmiersprache
+- Saxon-HE 10.6 - XSLT-Prozessor
+- Maven - Build-Management
+- Launch4j - Windows EXE Wrapper
 
+Lizenz
+Dieses Projekt ist unter der Apache License 2.0 lizenziert.
+Siehe THIRD-PARTY-LICENSES.txt für Lizenzen der verwendeten Bibliotheken.
+
+Credits
+Entwickelt von:
+Volker Schmitz IT Beratung
+
+Verwendet folgende Open-Source-Bibliotheken:
+- Saxon-HE 10.6 © Saxonica Limited (Mozilla Public License 2.0)
+- Launch4j © Grzegorz Kowal (BSD/MIT License)
