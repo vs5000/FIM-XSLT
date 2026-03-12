@@ -1682,5 +1682,17 @@
 			</Value>
 			<Value ColumnRef="Meldungshilfe"/>
 		</Row>
+		<Row>
+			<Value ColumnRef="Code">
+				<SimpleValue>1139</SimpleValue>
+			</Value>
+			<Value ColumnRef="Typ">
+				<SimpleValue>Hinweis</SimpleValue>
+			</Value>
+			<Value ColumnRef="Meldungstext">
+				<SimpleValue>Die Multiplizität von Datenfeldern des Typs "Anlage (Datei)" sollte i. d. R. immer mehrfach, also 'n:*' sein.</SimpleValue>
+			</Value>
+			<Value ColumnRef="Meldungshilfe"/>
+		</Row>
    </SimpleCodeList>
 </gc:CodeList>
