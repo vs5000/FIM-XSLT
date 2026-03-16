@@ -11,9 +11,9 @@
 	<Identification>
 		<ShortName>XDFM</ShortName>
 		<LongName xml:lang="de-DE">Meldungen XDF-Qualität</LongName>
-		<Version>1.6</Version>
+		<Version>1.8</Version>
 		<CanonicalUri>urn:xoev-de:fim-datenfelder:codeliste:xdfm</CanonicalUri>
-		<CanonicalVersionUri>urn:xoev-de:fim-datenfelder:codeliste:xdfm_1.6</CanonicalVersionUri>
+		<CanonicalVersionUri>urn:xoev-de:fim-datenfelder:codeliste:xdfm_1.8</CanonicalVersionUri>
 		<Agency>
 			<LongName xml:lang="de-DE">FIM-Baustein Datenfelder</LongName>
 		</Agency>
@@ -202,7 +202,7 @@
 			<SimpleValue>FehlerMethodisch</SimpleValue>
 		 </Value>
 		 <Value ColumnRef="Meldungstext">
-			<SimpleValue>Innerhalb von Datenschemata und Datenfeldgruppen dürfen nur Elemente mit der Strukturelementart harmonisiert oder rechtsnormgebunden verwendet werden.</SimpleValue>
+			<SimpleValue>Innerhalb von Datenschemata und Datenfeldgruppen dürfen nur Elemente mit der Strukturelementart 'harmonisiert' oder 'rechtsnormgebunden' verwendet werden.</SimpleValue>
 		 </Value>
 		 <Value ColumnRef="Meldungshilfe"/>
 	  </Row>
@@ -1630,7 +1630,7 @@
 				<SimpleValue>Hinweis</SimpleValue>
 			</Value>
 			<Value ColumnRef="Meldungstext">
-				<SimpleValue>In einer Arbeitskopie sollten i. d. R. keine Versionen von Baukastenelementen des eigenen Nummernkreises verwendet werden.</SimpleValue>
+				<SimpleValue>In einer Arbeitskopie sollten i. d. R. keine Versionen von Baukastenelementen des eigenen Nummernkreises mit der Strukturelementart 'rechtsnormgebunden' verwendet werden.</SimpleValue>
 			</Value>
 			<Value ColumnRef="Meldungshilfe"/>
 		</Row>
@@ -1690,7 +1690,67 @@
 				<SimpleValue>Hinweis</SimpleValue>
 			</Value>
 			<Value ColumnRef="Meldungstext">
-				<SimpleValue>Die Multiplizität von Datenfeldern des Typs "Anlage (Datei)" sollte i. d. R. immer mehrfach, also 'n:*' sein.</SimpleValue>
+				<SimpleValue>Die Multiplizität von Datenfeldern des Typs 'Anlage (Datei)' sollte i. d. R. immer mehrfach, also 'n:*' sein.</SimpleValue>
+			</Value>
+			<Value ColumnRef="Meldungshilfe"/>
+		</Row>
+		<Row>
+			<Value ColumnRef="Code">
+				<SimpleValue>1140</SimpleValue>
+			</Value>
+			<Value ColumnRef="Typ">
+				<SimpleValue>FehlerMethodisch</SimpleValue>
+			</Value>
+			<Value ColumnRef="Meldungstext">
+				<SimpleValue>Nur Baukastenelemente des Nummernkreises 60 dürfen als Fachlichen Ersteller 'FIM-Baustein Datenfelder' oder 'FIM Baustein Datenfelder' enthalten.</SimpleValue>
+			</Value>
+			<Value ColumnRef="Meldungshilfe"/>
+		</Row>
+		<Row>
+			<Value ColumnRef="Code">
+				<SimpleValue>1141</SimpleValue>
+			</Value>
+			<Value ColumnRef="Typ">
+				<SimpleValue>FehlerMethodisch</SimpleValue>
+			</Value>
+			<Value ColumnRef="Meldungstext">
+				<SimpleValue>Nur Datenschemata des Nummernkreises 60 dürfen als Fachlichen Ersteller 'FIM-Baustein Datenfelder' oder 'FIM Baustein Datenfelder' enthalten.</SimpleValue>
+			</Value>
+			<Value ColumnRef="Meldungshilfe"/>
+		</Row>
+		<Row>
+			<Value ColumnRef="Code">
+				<SimpleValue>1142</SimpleValue>
+			</Value>
+			<Value ColumnRef="Typ">
+				<SimpleValue>FehlerKritisch</SimpleValue>
+			</Value>
+			<Value ColumnRef="Meldungstext">
+				<SimpleValue>Bei einem Baukastenelement im Status 'Entwurf', 'methodisch freigegeben', 'fachlich freigegeben (silber)', 'fachlich freigegeben (gold)' oder 'inaktiv' muss das Feld 'Status geändert am' befüllt sein.</SimpleValue>
+			</Value>
+			<Value ColumnRef="Meldungshilfe"/>
+		</Row>
+		<Row>
+			<Value ColumnRef="Code">
+				<SimpleValue>1143</SimpleValue>
+			</Value>
+			<Value ColumnRef="Typ">
+				<SimpleValue>FehlerKritisch</SimpleValue>
+			</Value>
+			<Value ColumnRef="Meldungstext">
+				<SimpleValue>Bei einem Datenschema im Status 'Entwurf', 'methodisch freigegeben', 'fachlich freigegeben (silber)', 'fachlich freigegeben (gold)' oder 'inaktiv' muss das Feld 'Status geändert am' befüllt sein.</SimpleValue>
+			</Value>
+			<Value ColumnRef="Meldungshilfe"/>
+		</Row>
+		<Row>
+			<Value ColumnRef="Code">
+				<SimpleValue>1144</SimpleValue>
+			</Value>
+			<Value ColumnRef="Typ">
+				<SimpleValue>FehlerKritisch</SimpleValue>
+			</Value>
+			<Value ColumnRef="Meldungstext">
+				<SimpleValue>Bei einem Dokumentsteckbrief im Status 'Entwurf', 'methodisch freigegeben', 'fachlich freigegeben (silber)', 'fachlich freigegeben (gold)' oder 'inaktiv' muss das Feld 'Status geändert am' befüllt sein.</SimpleValue>
 			</Value>
 			<Value ColumnRef="Meldungshilfe"/>
 		</Row>
